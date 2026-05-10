@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的旅程 - H825</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('C:/Users/Huang/Pictures/Hphoto/image3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 20px 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+            font-size: 16px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 60px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+        }
+
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 800px;
+        }
+
+        .glass-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .glass-btn:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="about.html">关于</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>我的旅程</h1>
+        
+        <div class="city-grid">
+            <a href="beijing.html" class="glass-btn">北京</a>
+            <a href="#" class="glass-btn">景德镇</a>
+            <a href="#" class="glass-btn">佛山</a>
+            <a href="#" class="glass-btn">长沙</a>
+            <a href="#" class="glass-btn">越南</a>
+            <a href="#" class="glass-btn">深圳</a>
+            <a href="#" class="glass-btn">持续更新中...</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 H825</p>
+    </footer>
+</body>
+</html>
